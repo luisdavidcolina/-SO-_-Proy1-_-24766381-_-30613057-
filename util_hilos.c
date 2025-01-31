@@ -22,7 +22,7 @@ void inicializar_hilos(int num_hilos, const char *directorio_inicio, char modo) 
 }
 
 void *procesar_archivos(void *arg) {
-    parametros_hilo_t *parametros = (parametros_hilo_t *)arg;
+    // parametros_hilo_t *parametros = (parametros_hilo_t *)arg; // Cmo aun no esta implementado causa problemas
     // Implementación del procesamiento de archivos
     return NULL;
 }
