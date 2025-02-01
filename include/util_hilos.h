@@ -9,4 +9,6 @@ typedef struct {
 void inicializar_hilos(int num_hilos, const char *directorio_inicio, char modo);
 void *procesar_archivos(void *arg);
 
-#endif // UTIL_HILOS_H
+#endif 
+
+// UTIL_HILOS_H para manejo d e hilos

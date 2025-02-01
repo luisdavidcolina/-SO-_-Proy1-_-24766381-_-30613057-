@@ -13,6 +13,8 @@ sem_t paraVisitar;
 sem_t visitados;
 int duplicados = 0; // Contador de duplicados
 
+//Implementacion de hilospara procesamiento enparalelo con los semaforos necesarios
+
 void inicializar_hilos(int num_hilos, const char *directorio_inicio, char modo) {
     pthread_t* hilos = (pthread_t*)malloc(sizeof(pthread_t)*num_hilos);
 
@@ -52,8 +54,11 @@ void inicializar_hilos(int num_hilos, const char *directorio_inicio, char modo) 
     free(salida); // Liberar la memoria del buffer
 }
 
+//Procesamiento de archivosde acuerdo a los requerimientos delenucnaiaso
+
+
 void *procesar_archivos(void *arg) {
-    lista_archivos_t *parametros = (lista_archivos_t *)arg; // Cmo aun no esta implementado causa problemas
+    lista_archivos_t *parametros = (lista_archivos_t *)arg;
     while(1){
          sem_wait(&paraVisitar);
         if (parametros->cabecera == NULL)

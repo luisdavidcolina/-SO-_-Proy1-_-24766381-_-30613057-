@@ -24,3 +24,4 @@ char *obtenerNombreArchivo(const char *ruta);
 void listar_archivos(const char *nombre_directorio, lista_archivos_t *lista_archivos);
 
 #endif // UTIL_ARCHIVOS_H
+

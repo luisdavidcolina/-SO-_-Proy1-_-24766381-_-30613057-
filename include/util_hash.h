@@ -8,4 +8,7 @@ int MDFile(char* filename, char hashValue[33]);
 void crear_hash_lista(lista_archivos_t* lista, char modo);
 
 int compararhashes(char* a, char* b);
-#endif // UTIL_HASH_H
+#endif 
+
+
+// UTIL_HASH_H for HASH

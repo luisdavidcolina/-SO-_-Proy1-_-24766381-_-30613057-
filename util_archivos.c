@@ -5,6 +5,8 @@
 #include <sys/stat.h>
 #include <string.h>
 
+//Manipulacion de archivospara duplicados
+
 
 void agregar(lista_archivos_t* lista, char *valor)
 {

@@ -12,6 +12,8 @@ int compararhashes(char* a, char* b){
     return 0;
 }
 
+//Codigo para la aplicacion de MD5 en distintas modalidades para su uso en el proceso con los archivos
+
 
 int calcular_md5(const char *nombre_archivo, char *valor_hash, char modo) {
     if (modo == 'e') {

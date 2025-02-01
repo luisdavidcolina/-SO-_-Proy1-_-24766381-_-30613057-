@@ -6,6 +6,9 @@
 #include "include/util_hilos.h"
 
 int main(int argc, char *argv[]) {
+
+    //recoleccion de parametros del comandopor terminal
+    
     if (argc != 7) {
         fprintf(stderr, "Uso: %s -t <numero de hilos> -d <directorio de inicio> -m <e | l>\n", argv[0]);
         return 1;
